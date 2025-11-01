@@ -28,8 +28,8 @@ Tsinghua University<br>
 
 ## 🔥 Introduction
 
-This is the github repository of *UniEmo: Unifying Emotional Understanding and Generation with Learnable Expert Queries*. In this work, we introduce UniEmo, a unified framework that synergistically integrates emotional understanding and generation through a hierarchical understanding chain and dual generation‑driven feedback.
-The whole framework of UniEmo:
+This is the github repository of *AV-Master: Dual-Path Comprehensive Perception Makes Better Audio-Visual Question Answering*. In this work, we propose AV-Master, a novel dual-path audio-visual question answering expert model designed to address the challenges faced by existing models in processing complex audio-visual scenes.
+The whole framework of AV-Master:
 
 <div align="center">
 <img src='images/overview.png' width='100%'>
