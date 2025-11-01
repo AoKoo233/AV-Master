@@ -32,7 +32,7 @@ This is the github repository of *UniEmo: Unifying Emotional Understanding and G
 The whole framework of UniEmo:
 
 <div align="center">
-<img src='images/fig2-v5.png' width='100%'>
+<img src='images/overview.png' width='100%'>
 </div>
 
 ## 🔥 Details will be released. Stay tuned.
