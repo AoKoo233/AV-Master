@@ -43,7 +43,6 @@ The whole framework of AV-Master:
 @article{zhang2025av,
   title={AV-Master: Dual-Path Comprehensive Perception Makes Better Audio-Visual Question Answering},
   author={Zhang, Jiayu and Ye, Qilang and Ye, Shuo and Lin, Xun and Song, Zihan and Yu, Zitong},
-  journal={arXiv e-prints},
-  pages={arXiv--2510},
+  journal={arXiv preprint arXiv:2510.18346},
   year={2025}
 }
