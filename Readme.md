@@ -38,8 +38,6 @@ The whole framework of AV-Master:
 <img src='images/overview.png' width='100%'>
 </div>
 
-## 🛠️ Dataset
-
 
 ## 🛠️ Usage
 
