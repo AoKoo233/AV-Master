@@ -131,27 +131,26 @@ def main():
                                mode_flag = 'val')
     val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, pin_memory=True)
 
-    av_avg_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_avg.json', args)
-    av_temp_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_temp.json', args)
-    av_comp_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_comp.json', args)
-    av_local_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_local.json', args)
-    av_count_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_count.json', args)
-    av_exist_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_av_exist.json', args)
+    av_avg_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_avg.json', args)
+    av_temp_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_temp.json', args)
+    av_comp_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_comp.json', args)
+    av_local_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_local.json', args)
+    av_count_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_count.json', args)
+    av_exist_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_av_exist.json', args)
 
-    a_avg_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_a_avg.json', args)
-    a_comp_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_a_comp.json', args)
-    a_count_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_a_count.json', args)
+    a_avg_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_a_avg.json', args)
+    a_comp_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_a_comp.json', args)
+    a_count_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_a_count.json', args)
 
-    v_avg_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_v_avg.json', args)
-    v_local_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_v_local.json', args)
-    v_count_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_val_v_count.json', args)
+    v_avg_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_v_avg.json', args)
+    v_local_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_v_local.json', args)
+    v_count_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_val_v_count.json', args)
 
 
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.1)
     criterion = nn.CrossEntropyLoss()
 
-    #model.load_state_dict(torch.load('models_pstpPSTP_Net.pt'),strict=True)
 
 
     best_acc = 0
