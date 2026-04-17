@@ -102,7 +102,7 @@ class AVQA_dataset(Dataset):
 
         self.args = args
 
-        samples = json.load(open('./dataset/split_que_id/music_avqa_train.json', 'r'))
+        samples = json.load(open('./dataset/musci_avqa/music_avqa_train.json', 'r'))
 
 
         # Question
