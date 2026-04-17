@@ -118,20 +118,20 @@ def main():
                                mode_flag = 'val')
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, pin_memory=True)
 
-    av_avg_loader = avqa_dataset('./dataset/split_que_id/sub_val/music_avqa_test_av_avg.json', args)
-    av_temp_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_av_temp.json', args)
-    av_comp_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_av_comp.json', args)
-    av_local_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_av_local.json', args)
-    av_count_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_av_count.json', args)
-    av_exist_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_av_exist.json', args)
+    av_avg_loader = avqa_dataset('./dataset/music_avqa/sub_val/music_avqa_test_av_avg.json', args)
+    av_temp_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_av_temp.json', args)
+    av_comp_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_av_comp.json', args)
+    av_local_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_av_local.json', args)
+    av_count_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_av_count.json', args)
+    av_exist_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_av_exist.json', args)
 
-    a_avg_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_a_avg.json', args)
-    a_comp_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_a_comp.json', args)
-    a_count_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_a_count.json', args)
+    a_avg_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_a_avg.json', args)
+    a_comp_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_a_comp.json', args)
+    a_count_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_a_count.json', args)
 
-    v_avg_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_v_avg.json', args)
-    v_local_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_v_local.json', args)
-    v_count_loader = avqa_dataset('./dataset/split_que_id/sub_test/music_avqa_test_v_count.json', args)
+    v_avg_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_v_avg.json', args)
+    v_local_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_v_local.json', args)
+    v_count_loader = avqa_dataset('./dataset/music_avqa/sub_test/music_avqa_test_v_count.json', args)
 
 
     model.load_state_dict(torch.load(args.model_save_dir + args.checkpoint + ".pt"),strict=True)
