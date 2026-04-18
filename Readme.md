@@ -60,7 +60,7 @@ The whole framework of AV-Master:
    Please prepare your dataset as the following structure (e.g., Music AVQA):
 
    ```
-   dataset/split_que_id/
+   dataset/music_avqa/
    ├── sub_test/
    │   ├── test_a_comp.json
    │   ├── test_a_count.json
