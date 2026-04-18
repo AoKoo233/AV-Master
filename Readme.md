@@ -74,14 +74,17 @@ The whole framework of AV-Master:
    ├── train.json
    ├── val.json
    ```
+3. **Feature extraction**
 
-3. **Training**
+    We follow the same protocol as [TSPM](https://github.com/gewu-lab/tspm) for feature extraction. Please refer to [TSPM](https://github.com/gewu-lab/tspm)
+
+4. **Training**
 
 ```
 python main_train.py --batch-size 64 --epochs 30 --lr 1e-4 --gpu 0 --checkpoint AV_Master --use_word True --audios_feat_dir ./feats/Music-AVQA/vggish_audio --clip_qst_dir ./feats/Music-AVQA/clip_sentence_l14_336px --clip_vit_b32_dir ./feats/Music-AVQA/clip_vit_l14_336px --clip_word_dir ./feats/Music-AVQA/clip_word_l14_336px --clip_patch_dir ./feats/Music-AVQA/clip_patch_vit_l14_336px 
 ```
 
-4. **Testing**
+5. **Testing**
 
 ```
 python main_test.py --gpu 0 --checkpoint AV_Master --use_word True --audios_feat_dir ./feats/Music-AVQA/vggish_audio --clip_qst_dir ./feats/Music-AVQA/clip_sentence_l14_336px --clip_vit_b32_dir ./feats/Music-AVQA/clip_vit_l14_336px --clip_word_dir ./feats/Music-AVQA/clip_word_l14_336px --clip_patch_dir ./feats/Music-AVQA/clip_patch_vit_l14_336px 
