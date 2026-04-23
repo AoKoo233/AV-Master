@@ -87,7 +87,7 @@ python main_train.py --batch-size 64 --epochs 30 --lr 1e-4 --gpu 0 --checkpoint 
 5. **Testing**
 
 ```
-python main_test.py --gpu 0 --checkpoint AV_Master --use_word True --audios_feat_dir ./feats/Music-AVQA/vggish_audio --clip_qst_dir ./feats/Music-AVQA/clip_sentence_l14_336px --clip_vit_b32_dir ./feats/Music-AVQA/clip_vit_l14_336px --clip_word_dir ./feats/Music-AVQA/clip_word_l14_336px --clip_patch_dir ./feats/Music-AVQA/clip_patch_vit_l14_336px 
+python main_test.py --batch-size 64 --gpu 0 --checkpoint AV_Master --use_word True --audios_feat_dir ./feats/Music-AVQA/vggish_audio --clip_qst_dir ./feats/Music-AVQA/clip_sentence_l14_336px --clip_vit_b32_dir ./feats/Music-AVQA/clip_vit_l14_336px --clip_word_dir ./feats/Music-AVQA/clip_word_l14_336px --clip_patch_dir ./feats/Music-AVQA/clip_patch_vit_l14_336px 
 ```
 
 ## 📝 Citation
