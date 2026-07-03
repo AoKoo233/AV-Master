@@ -26,8 +26,11 @@ Tsinghua University<br>
 
 ## :loudspeaker: News 
 
+- [07/2026] :fire: AV-Master has been accepted by IEEE TCSVT! 
 - [04/2026] :fire: The code is released. Enjoy it!
-- [10/2025] :fire: [arXiv paper](https://arxiv.org/abs/2510.18346) released! 
+- [12/2025] :fire: AV-Master was rejected by IEEE TIP :( 
+- [10/2025] :fire: [arXiv paper](https://arxiv.org/abs/2510.18346) released!
+- [09/2025] :fire: AV-Master was rejected by AAAI'26 :( 
 
 ## :bulb: Introduction 
 
