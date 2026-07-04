@@ -38,7 +38,7 @@ This is the github repository of *AV-Master: Dual-Path Comprehensive Perception 
 The whole framework of AV-Master:
 
 <div align="center">
-<img src='images/overview.png' width='100%'>
+<img src='images/overview2.png' width='100%'>
 </div>
 
 
