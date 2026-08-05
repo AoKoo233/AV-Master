@@ -96,11 +96,12 @@ python main_test.py --batch-size 64 --gpu 0 --checkpoint AV_Master --use_word Tr
 ## 📝 Citation
 
 ```bib
-@article{zhang2025av,
-  title={AV-Master: Dual-Path Comprehensive Perception Makes Better Audio-Visual Question Answering},
+@article{zhang2026av,
+  title={Av-master: Dual-path comprehensive perception makes better audio-visual question answering},
   author={Zhang, Jiayu and Ye, Shuo and Ye, Qilang and Lin, Xun and Song, Zihan and Yu, Zitong},
-  journal={arXiv preprint arXiv:2510.18346},
-  year={2025}
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
